@@ -1,0 +1,827 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menu-index {
+	display: flex;
+	background-color: #cfe4ff;
+	padding: 40px;
+	border-radius: 20px;
+	border: 2px solid #000;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 400px;
+	width: 600px;
+}
+
+.menu-index h1 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 2px solid #174278;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #cfe4ff;
+}
+.menu-button-index {
+	width: 100%;
+	padding: 20px;
+	background-color: #193c5c;
+	border: 2px solid #000;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.menu-button-index:hover {
+	background-color: #28587a;
+}
+a{
+	display: flex;
+}
+/*css recuperar senha e logins*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #174278;
+}
+
+.container {
+
+	justify-content: space-around;
+	padding: 40px;
+	background-color: #012c41;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border: 6px solid #000000;
+	
+}
+
+
+
+
+.form-container {
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	padding: 70px;
+	width: 800px;
+	height: 450px;
+}
+
+
+h1 {
+	text-align: center;
+	background-color: #cfe4ff;
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid #012c41;
+}
+
+/* Estilo dos campos de entrada */
+.form-group {
+	margin-bottom: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+label {
+	display: block;
+	margin: 10px 0 5px;
+}
+
+.input-cadastro{
+	width: 400px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background-color: #E3F1FC;
+	display: flex;
+}
+.input-fonte{
+	width: 486px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background-color: #E3F1FC;
+	display: flex;
+}
+
+/* Estilo dos botões */
+.button-group {
+	display: flex;
+	margin-top: 20px;
+	align-content: stretch;
+	align-items: center;
+	justify-content: space-between;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #1D4F82;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #163C64;
+}
+
+button.forgot-password {
+	background-color: #63b1ec;
+	color: black;
+}
+
+button.forgot-password:hover {
+	background-color: #27669c;
+}
+button.forgot-password2 {
+	background-color: #193c5c;
+	color: white;
+}
+button.forgot-password2:hover {
+	background-color: #27669c;
+}
+/*cadastro*/
+
+
+.form-container-cadastro {
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	padding: 20px;
+	width: 1000px;
+	height: 450px;
+}
+
+h1 {
+	text-align: center;
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	border: 2px solid #174278;
+}
+
+/* Layout do formulário */
+.form-group-cadastro {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-left-cadastro,
+.form-right-cadastro {
+	width: 45%;
+}
+
+
+.input-login {
+	width: 70%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background-color: #E3F1FC;
+}
+
+.checkbox-container-cadastro {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+/* Estilo do botão */
+#button-cadastro {
+	width: 100%;
+	padding: 10px;
+	background-color: #1D4F82;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 100px;
+}
+
+
+
+#button-cadastro:hover {
+	background-color: #163C64;
+}
+/*menu*/
+
+
+
+.container-menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	background-color: #012c41; /* Cor de fundo geral do container */
+	padding: 40px;
+	border: 6px solid #000000; /* Borda preta */
+	border-radius: 10px;
+	width: 800px;
+	height: 500px;
+}
+
+.menu-perfil {
+	display: flex;
+	background-color: #cfe4ff;
+	padding: 30px;
+	border-radius: 10px;
+	border: 2px solid #000;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.menu h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 2px solid #174278;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.menu-button {
+	width: 100%;
+	padding: 20px;
+	background-color: #174278;
+	border: 2px solid #174278;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.menu-button:hover {
+	background-color: #28587a;
+}
+
+.profile-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #cfe4ff;
+	padding: 30px;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+
+.profile-icon-menu {
+	position: relative;
+	background-color: #adc7e0;
+	padding: 20px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	text-align: center;
+	width: 100%;
+	height: 150px;
+}
+
+.icon-text-menu {
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.icon-star-menu {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	color: #000;
+}
+
+.profile-info-menu {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.profile-info p {
+	font-size: 14px;
+}
+
+.profile-buttons-menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile-buttons-menu button {
+	background-color: #35678f;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.profile-buttons-menu button:hover {
+	background-color: #224f70;
+}
+/*partida.css*/
+
+
+
+.container-partida {
+	display: grid;
+	grid-template-columns: 2fr 1.3fr;
+	gap: 10px;
+	background-color: #012c41;;
+	padding: 20px;
+	border: 4px solid #000;
+	border-radius: 10px;
+	width: 850px;
+	
+}
+
+.question-section-partida {
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	border: 2px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.question-section-partida h1 {
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin: 10px;
+	background-color: #cfe4ff;
+	border: 2px solid #174278;
+	border-radius: 10px;
+}
+
+.options-partida {
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+	background-color: #cfe4ff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+.option-partida:hover {
+	background-color: #D3E8F9;
+}
+
+.answer-section-partida {
+	background-color: #cfe4ff;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+.lorem-text-partida {
+	background-color: #eff3f7;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.answer-options-partida {
+	background-color: #cfe4ff;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.action-buttons-partida {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.action-partida {
+	background-color: #214968;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.action-partida:hover {
+	background-color: #3882be;
+}
+
+.next-button-partida {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next-partida {
+	background-color: #194769;
+	border: 2px solid #000;
+	border-radius: 50%;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.next-partida:hover {
+	background-color: #52a1e2;
+}
+/*questão*/
+
+
+
+
+.question-section-questao {
+	background-color: #cfe4ff;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.question-section-questao h1 {
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #cfe4ff;
+	border: 2px solid #174278;
+	border-radius: 10px;
+}
+
+.options-questao {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.option-questao {
+	padding: 10px;
+	background-color: #cfe4ff;
+	border: 2px solid #000;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.option-questao:hover {
+	background-color: #D3E8F9;
+}
+
+.answer-section-questao {
+	background-color: #cfe4ff;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.lorem-text-questao {
+	background-color: #eff3f7;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.answer-options-questao {
+	background-color: #cfe4ff;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.action-buttons-questao {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.action-questao {
+	background-color: #E3F1FC;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.action-questao:hover {
+	background-color: #3882be;
+}
+
+.next-button-questao {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.next-questao {
+	background-color: #163953;
+	border: 2px solid #000;
+	border-radius: 50%;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.next-questao:hover {
+	background-color: #c2d4e2;
+}
+
+.menu-pergunta {
+	display: flex;
+	background-color: #cfe4ff;
+	padding: 40px;
+	border-radius: 20px;
+	border: 2px solid #000;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 400px;
+	width: 600px;
+	
+}
+
+.menu-pergunta h1 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 2px solid #174278;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #cfe4ff;
+	width: 490px;
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	align-items: baseline;
+}
+.menu-button-partida {
+	width: 100%;
+	padding: 20px;
+	background-color: #e8f2fa;
+	border: 2px solid #000;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.menu-button-partida:hover {
+	background-color: #28587a;
+}
+select {
+	width: calc(100% - 30px);
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: #FFF;
+	margin-right: 5px;
+}
+.button-partida {
+	background-color: #193c5c;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 490px;
+	height: 40px;
+}
+
+.button-partida:hover {
+	background-color: #28587a;
+}
+/*build*/
+
+#build {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #174278;
+}
+
+/* O caderno (caixa azul claro com pautas) */
+
+.caderno-build {
+	background-color: #cfe4ff;
+	width: 1000px;
+	height: 550px;
+	border: 3px solid #000;
+	border-radius: 10px;
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+/* Cabeçalho como um informe (parecendo uma etiqueta ou banner colado no caderno) */
+#Titu-build{
+	width: 940px;
+	background-color: #cfe4ff;
+	text-align: center;
+	padding: 20px;
+	border-radius: 50px;
+	border: 2px solid #000;
+	font-weight: bold;
+	font-size: 24px;
+	z-index: 2;
+	align-content: center;
+}
+
+/* Caixa das informações com fitas (Simulando fita colada para inputs) */
+.box-build {
+	width: 45%;
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	padding: 10px;
+	border: 2px solid #000;
+	margin: 10px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-content: center;
+	justify-content: flex-end;
+}
+
+
+#label-build {
+	font-weight: bold;
+	margin-bottom: 5px;
+	width: 100px;
+}
+
+#opcao{
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+.button-box-build{
+	display: flex;
+	align-content: center;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
+.code {
+	background-color: #021627;
+	color: white;
+	border: 1px solid #000;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 45%;
+	align-content: center;
+	
+	display: flex;
+	height: 30px;
+}
+.button-build {
+	background-color: #0a5da7;
+	color: white;
+	border: 1px solid #000;
+	padding: 6px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	display: flex;
+	height: 35px;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.button-build:hover {
+	background-color: #2C4A66;
+}
+
+/* Drop-down (parece uma fita colada com a seta ao lado) */
+.span-required{
+	display: none;
+	font-size: 14px;
+	margin: 3px 0 0 1px;
+	color: RED
+}
+/*alternativas*/
+
+.container-alternativas {
+	padding: 20px;
+	background-color: #012c41;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	
+}
+
+.form-container-alternativas {
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	padding: 20px;
+	width: 1000px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+h1 {
+	text-align: center;
+	background-color: #cfe4ff;
+	border-radius: 10px;
+	border: 2px solid #174278;
+}
+
+/* Layout do formulário */
+.form-alternativas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-group-alternativas {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form-left-alternativas{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 150px;
+}
+.form-right-alternativas {
+	width: 45%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.input-login {
+	width: 70%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background-color: #E3F1FC;
+}
+
+/* Estilo do botão */
+#button-alternativas {
+	display: flex;
+	width: 500px;
+	padding: 10px;
+	background-color: #1D4F82;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 100px;
+}
+
+
+
+#button-alternativas:hover {
+	background-color: #163C64;
+}
