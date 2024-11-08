@@ -72,7 +72,7 @@ async function selecionarProfessorNome(nome_professor){
 }
 
 //Seleciona professor pelo email
-async function selecionaProfessorEmail(email_institucional){
+async function selecionarProfessorEmail(email_institucional){
 	query = "SELECT * FROM `professores` WHERE `email_institucional`='"+ email_institucional +"'"
 	retorno = await selecionarBanco(query)
 	return retorno
@@ -284,3 +284,41 @@ async function selecionarFeedbackProfessor(fk_professor){
 })()
 */
 
+module.exports = {
+	selecionarAlunoEmail,
+	selecionarAlunoId,
+	selecionarAlunoNome,
+	selecionarAlunos,
+	selecionarBanco,
+	selecionarCoordenadorEmail,
+	selecionarCoordenadorId,
+	selecionarCoordenadorNome,
+	selecionarCoordenadores,
+	selecionarCursoCoordenador,
+	selecionarCursoId,
+	selecionarCursoNome,
+	selecionarCursos,
+	selecionarDisciplinaCoordenador,
+	selecionarDisciplinaCurso,
+	selecionarDisciplinaId,
+	selecionarDisciplinaNome,
+	selecionarDisciplinas,
+	selecionarEnunciadoDisciplina,
+	selecionarEnunciadoId,
+	selecionarEnunciadoTitulo,
+	selecionarEnunciados,
+	selecionarFeedbackId,
+	selecionarFeedbackProfessor,
+	selecionarFeedbackQuestao,
+	selecionarFeedbacks,
+	selecionarProfessorCoordenador,
+	selecionarProfessorEmail,
+	selecionarProfessorId,
+	selecionarProfessorNome,
+	selecionarProfessores,
+	selecionarQuestaoDificuldade,
+	selecionarQuestaoEnunciado,
+	selecionarQuestaoId,
+	selecionarQuestaoProfessor,
+	selecionarQuestoes,
+}

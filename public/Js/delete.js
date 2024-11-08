@@ -65,3 +65,16 @@ const knex = require('knex')({
 	}
   })();
   
+
+
+  module.exports = {
+	deletarAluno,
+	deletarBanco,
+	deletarCoordenador,
+	deletarCurso,
+	deletarDisciplina,
+	deletarEnunciado,
+	deletarFeedback,
+	deletarProfessor,
+	deletarQuestao
+}

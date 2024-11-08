@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head></head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../Css/style.css">
-<title>Cadastrar Professor</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Css/style.css">
+	<title>Cadastrar Professor</title>
 </head>
 
 <body>
@@ -28,16 +28,16 @@
 						<span class="span-required" id="span-compara-email"></span>
 
 						<div class="checkbox-container-cadastro">
-							<input type="checkbox" id="termos" name="termos">
+							<input type="checkbox" id="termos" name="termos" required>
 							<label for="termos">Termos de uso e privacidade</label>
+							<a href="../termosdeuso.html"><small>Clique aqui para ver nossos termos de uso</small></a>
 						</div>
-						<a href="../termosdeuso.html"><small>Clique aqui para ver nossos termos de uso</small></a>
 					</div>
 
 					<div class="form-right-cadastro">
 						<label for="dataNascimento">Data de Nascimento:</label>
-						<input type="date" id="dataNascimento" name="dataNascimento" class="input-cadastro required" required>
-						<span class="span-required" id="span-email"></span>
+						<input type="date" id="dataNascimento" name="dataNascimento" class="input-cadastro required" required max="2008-12-31" min="1950-01-01" onblur="validarDataNasc(this)">
+						<span id="span-validacao-data" style="display: none; color: red; font-size: 12px;"></span>
                         
                         <label for="senha">Senha:</label>
 						<input type="password" id="senha" name="senha" class="input-cadastro required" oninput="erroSenha()" required>
@@ -53,6 +53,6 @@
 			</form>
 		</div>
 	</div>
-	<script src="../Js/Funcoes.js"></script>
+	<script src="../Js/validar.js"></script>
 </body>
 </html>

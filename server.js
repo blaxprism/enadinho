@@ -2,25 +2,39 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-// Configura o Express para servir arquivos estáticos da pasta 'public'
 app.use(express.static('public'));
 
-//funções internas
-const validar = require('./public/Js/validar')
+// Funções de validação importadas corretamente
+const validar = require('./public/Js/validar');
 
-//a rota no back end app.post tem que estar no front end fetch 
 app.post('/api/validarNome', async (req, res) => {
-	const {campoFront} = req.body
-	const campo = { value: campoFront };
-	console.log(campo.value)
-	console.log(validar)
-	const retorno = await validar.validarNome(campo);
-	console.log(retorno)
-	console.log("--------------------")
-	res.json({ sucesso: retorno/*, dados: msgErro */});
-  });
+    const { campoFront } = req.body;
+    const campo = { value: campoFront };
+    const retorno = await validar.validarNome(campo);
+    res.json({ sucesso: retorno });
+});
 
-// Inicia o servidor
+app.post('/api/validarEmail', async (req, res) => {
+    const { campoFront } = req.body;
+    const campo = { value: campoFront };
+    let retorno = await validar.validarEmail(campo)
+    res.json({ sucesso: retorno, valor: campo.value });
+});
+
+app.post('/api/validarSenha', async (req, res) => {
+    const { campoFront } = req.body;
+    const campo = { value: campoFront };
+    const retorno = await validar.validarSenha(campo);
+    res.json({ sucesso: retorno, campo });
+});
+
+app.post('/api/validarDataNasc', async (req, res) => {
+    const { campoFront } = req.body;
+    const campo = { value: campoFront };
+    const retorno = await validar.validarDataNasc(campo);
+    res.json({ sucesso: retorno, campo });
+});
+
 app.listen(3000, () => {
-  console.log('Servidor rodando em http://localhost:3000');
+    console.log('Servidor rodando em http://localhost:3000');
 });

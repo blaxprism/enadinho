@@ -1,15 +1,132 @@
+:root {
+	--cor-princial: #cfe4ff;
+	--cor-secundaria: #174278;
+	--cor-borda: #012c41;
+	--cor-hover: #28587a;
+	--background-input: #E3F1FC;
+	--preto: #000;
+	--branco: #fff;
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+	
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--cor-secundaria);
+}
+
+h1 {
+	text-align: center;
+	background-color: var(--cor-princial);
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid var(--cor-borda);
+}
+
+a{
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	
+}
+
+.login-button {
+	padding: 10px 20px;
+	background-color: #1D4F82;
+	color: var(--branco);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #163C64;
+}
+
+.forgot-password {
+	padding: 10px 20px;
+	background-color: #1D4F82;
+	color: var(--branco);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button.forgot-password:hover {
+	background-color: #27669c;
+}
+
+button.forgot-password2 {
+	background-color: #193c5c;
+	color: var(--branco);
+}
+
+button.forgot-password2:hover {
+	background-color: #27669c;
+}
+
+label {
+	display: block;
+	margin: 10px 0 5px;
+	
+}
+
+h1 {
+	text-align: center;
+	background-color: var(--cor-princial);
+	border-radius: 10px;
+	border: 2px solid var(--cor-secundaria);
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+select {
+	width: calc(100% - 30px);
+	padding: 5px;
+	border: 1px solid var(--preto);
+	border-radius: 5px;
+	background-color: var(--branco);
+	margin-right: 5px;
+}
+
 .menu-index {
 	display: flex;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 40px;
 	border-radius: 20px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	flex-direction: column;
 	justify-content: space-evenly;
 	height: 400px;
@@ -20,16 +137,18 @@
 	font-size: 30px;
 	margin-bottom: 20px;
 	text-align: center;
-	border: 2px solid #174278;
+	border: 2px solid var(--cor-secundaria);
 	padding: 10px;
 	border-radius: 10px;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 }
+
 .menu-button-index {
 	width: 100%;
 	padding: 20px;
+	color: var(--branco);
 	background-color: #193c5c;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	cursor: pointer;
 	font-size: 16px;
@@ -37,57 +156,26 @@
 }
 
 .menu-button-index:hover {
-	background-color: #28587a;
-}
-a{
-	display: flex;
-}
-/*css recuperar senha e logins*/
-
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	background-color: #174278;
+	background-color: var(--cor-hover);
 }
 
 .container {
-
 	justify-content: space-around;
 	padding: 40px;
-	background-color: #012c41;
+	background-color: var(--cor-borda);
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	border: 6px solid #000000;
-	
+	border: 6px solid var(--preto);
 }
 
-
-
-
 .form-container {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	border-radius: 10px;
 	padding: 70px;
 	width: 800px;
 	height: 450px;
 }
 
-
-h1 {
-	text-align: center;
-	background-color: #cfe4ff;
-	padding: 10px;
-	border-radius: 10px;
-	border: 2px solid #012c41;
-}
-
-/* Estilo dos campos de entrada */
 .form-group {
 	margin-bottom: 20px;
 	margin-bottom: 20px;
@@ -99,29 +187,24 @@ h1 {
 	padding: 20px;
 }
 
-label {
-	display: block;
-	margin: 10px 0 5px;
-}
-
 .input-cadastro{
 	width: 400px;
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #E3F1FC;
+	border: 1px solid var(--preto);
+	background-color: var(--background-input);
 	display: flex;
 }
+
 .input-fonte{
 	width: 486px;
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #E3F1FC;
+	border: 1px solid var(--preto);
+	background-color: var(--background-input);
 	display: flex;
 }
 
-/* Estilo dos botões */
 .button-group {
 	display: flex;
 	margin-top: 20px;
@@ -130,53 +213,14 @@ label {
 	justify-content: space-between;
 }
 
-button {
-	padding: 10px 20px;
-	background-color: #1D4F82;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: #163C64;
-}
-
-button.forgot-password {
-	background-color: #63b1ec;
-	color: black;
-}
-
-button.forgot-password:hover {
-	background-color: #27669c;
-}
-button.forgot-password2 {
-	background-color: #193c5c;
-	color: white;
-}
-button.forgot-password2:hover {
-	background-color: #27669c;
-}
-/*cadastro*/
-
-
 .form-container-cadastro {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	border-radius: 10px;
 	padding: 20px;
 	width: 1000px;
 	height: 450px;
 }
 
-h1 {
-	text-align: center;
-	background-color: #cfe4ff;
-	border-radius: 10px;
-	border: 2px solid #174278;
-}
-
-/* Layout do formulário */
 .form-group-cadastro {
 	display: flex;
 	justify-content: space-between;
@@ -187,53 +231,45 @@ h1 {
 	width: 45%;
 }
 
-
 .input-login {
 	width: 70%;
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #E3F1FC;
+	border: 1px solid var(--preto);
+	background-color: var(--background-input);
 }
 
 .checkbox-container-cadastro {
 	margin-top: 20px;
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-input[type="checkbox"] {
-	margin-right: 10px;
-}
-
-/* Estilo do botão */
 #button-cadastro {
+	display: block;
 	width: 100%;
 	padding: 10px;
 	background-color: #1D4F82;
-	color: white;
+	color: var(--branco);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 100px;
+	margin-top: 20px;
 }
-
-
 
 #button-cadastro:hover {
 	background-color: #163C64;
 }
-/*menu*/
-
-
 
 .container-menu {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 30px;
-	background-color: #012c41; /* Cor de fundo geral do container */
+	background-color: var(--cor-borda); /* Cor de fundo geral do container */
 	padding: 40px;
-	border: 6px solid #000000; /* Borda preta */
+	border: 6px solid var(--preto); /* Borda preta */
 	border-radius: 10px;
 	width: 800px;
 	height: 500px;
@@ -241,10 +277,10 @@ input[type="checkbox"] {
 
 .menu-perfil {
 	display: flex;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 30px;
 	border-radius: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	flex-direction: column;
 	justify-content: space-evenly;
 }
@@ -253,7 +289,7 @@ input[type="checkbox"] {
 	font-size: 24px;
 	margin-bottom: 20px;
 	text-align: center;
-	border: 2px solid #174278;
+	border: 2px solid var(--cor-secundaria);
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -261,8 +297,8 @@ input[type="checkbox"] {
 .menu-button {
 	width: 100%;
 	padding: 20px;
-	background-color: #174278;
-	border: 2px solid #174278;
+	background-color: var(--cor-secundaria);
+	border: 2px solid var(--cor-secundaria);
 	border-radius: 10px;
 	cursor: pointer;
 	font-size: 16px;
@@ -270,24 +306,24 @@ input[type="checkbox"] {
 }
 
 .menu-button:hover {
-	background-color: #28587a;
+	background-color: var(--cor-hover);
 }
 
 .profile-menu {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 30px;
 	border-radius: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 }
 
 .profile-icon-menu {
 	position: relative;
 	background-color: #adc7e0;
 	padding: 20px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	text-align: center;
 	width: 100%;
@@ -296,7 +332,7 @@ input[type="checkbox"] {
 
 .icon-text-menu {
 	font-size: 18px;
-	color: #000;
+	color: var(--preto);
 	margin-bottom: 5px;
 }
 
@@ -305,7 +341,7 @@ input[type="checkbox"] {
 	top: 10px;
 	right: 10px;
 	font-size: 24px;
-	color: #000;
+	color: var(--preto);
 }
 
 .profile-info-menu {
@@ -324,7 +360,7 @@ input[type="checkbox"] {
 
 .profile-buttons-menu button {
 	background-color: #35678f;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px 20px;
 	cursor: pointer;
@@ -334,26 +370,23 @@ input[type="checkbox"] {
 .profile-buttons-menu button:hover {
 	background-color: #224f70;
 }
-/*partida.css*/
-
-
 
 .container-partida {
 	display: grid;
 	grid-template-columns: 2fr 1.3fr;
 	gap: 10px;
-	background-color: #012c41;;
+	background-color: var(--cor-borda);;
 	padding: 20px;
-	border: 4px solid #000;
+	border: 4px solid var(--preto);
 	border-radius: 10px;
 	width: 850px;
 	
 }
 
 .question-section-partida {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	border-radius: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -364,8 +397,8 @@ input[type="checkbox"] {
 	text-align: center;
 	margin-bottom: 20px;
 	margin: 10px;
-	background-color: #cfe4ff;
-	border: 2px solid #174278;
+	background-color: var(--cor-princial);
+	border: 2px solid var(--cor-secundaria);
 	border-radius: 10px;
 }
 
@@ -373,7 +406,7 @@ input[type="checkbox"] {
 	display: flex;
 	gap: 10px;
 	flex-direction: row;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	font-size: 16px;
 	cursor: pointer;
 }
@@ -384,10 +417,10 @@ input[type="checkbox"] {
 }
 
 .answer-section-partida {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 20px;
 	border-radius: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -396,16 +429,16 @@ input[type="checkbox"] {
 
 .lorem-text-partida {
 	background-color: #eff3f7;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 20px;
-	overflow: auto;
+	overflow-y: auto;
 }
 
 .answer-options-partida {
-	background-color: #cfe4ff;
-	border: 2px solid #000;
+	background-color: var(--cor-princial);
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -421,7 +454,7 @@ input[type="checkbox"] {
 
 .action-partida {
 	background-color: #214968;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px;
 	cursor: pointer;
@@ -439,7 +472,7 @@ input[type="checkbox"] {
 
 .next-partida {
 	background-color: #194769;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 50%;
 	padding: 10px 15px;
 	cursor: pointer;
@@ -448,16 +481,12 @@ input[type="checkbox"] {
 .next-partida:hover {
 	background-color: #52a1e2;
 }
-/*questão*/
-
-
-
 
 .question-section-questao {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 20px;
 	border-radius: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -468,8 +497,8 @@ input[type="checkbox"] {
 	text-align: center;
 	margin-bottom: 20px;
 	padding: 10px;
-	background-color: #cfe4ff;
-	border: 2px solid #174278;
+	background-color: var(--cor-princial);
+	border: 2px solid var(--cor-secundaria);
 	border-radius: 10px;
 }
 
@@ -481,8 +510,8 @@ input[type="checkbox"] {
 
 .option-questao {
 	padding: 10px;
-	background-color: #cfe4ff;
-	border: 2px solid #000;
+	background-color: var(--cor-princial);
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	font-size: 16px;
 	cursor: pointer;
@@ -493,10 +522,10 @@ input[type="checkbox"] {
 }
 
 .answer-section-questao {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 20px;
 	border-radius: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -504,15 +533,15 @@ input[type="checkbox"] {
 
 .lorem-text-questao {
 	background-color: #eff3f7;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 20px;
 }
 
 .answer-options-questao {
-	background-color: #cfe4ff;
-	border: 2px solid #000;
+	background-color: var(--cor-princial);
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -527,8 +556,8 @@ input[type="checkbox"] {
 }
 
 .action-questao {
-	background-color: #E3F1FC;
-	border: 2px solid #000;
+	background-color: var(--background-input);
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	padding: 10px;
 	cursor: pointer;
@@ -546,7 +575,7 @@ input[type="checkbox"] {
 
 .next-questao {
 	background-color: #163953;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 50%;
 	padding: 10px 15px;
 	cursor: pointer;
@@ -558,36 +587,36 @@ input[type="checkbox"] {
 
 .menu-pergunta {
 	display: flex;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	padding: 40px;
 	border-radius: 20px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	flex-direction: column;
 	justify-content: space-evenly;
 	height: 400px;
 	width: 600px;
-	
 }
 
 .menu-pergunta h1 {
 	font-size: 30px;
 	margin-bottom: 20px;
 	text-align: center;
-	border: 2px solid #174278;
+	border: 2px solid var(--cor-secundaria);
 	padding: 10px;
 	border-radius: 10px;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	width: 490px;
 	display: flex;
 	justify-content: space-around;
 	align-content: space-around;
 	align-items: baseline;
 }
+
 .menu-button-partida {
 	width: 100%;
 	padding: 20px;
 	background-color: #e8f2fa;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	border-radius: 10px;
 	cursor: pointer;
 	font-size: 16px;
@@ -595,19 +624,12 @@ input[type="checkbox"] {
 }
 
 .menu-button-partida:hover {
-	background-color: #28587a;
+	background-color: var(--cor-hover);
 }
-select {
-	width: calc(100% - 30px);
-	padding: 5px;
-	border: 1px solid #000;
-	border-radius: 5px;
-	background-color: #FFF;
-	margin-right: 5px;
-}
+
 .button-partida {
 	background-color: #193c5c;
-	color: white;
+	color: var(--branco);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -616,9 +638,8 @@ select {
 }
 
 .button-partida:hover {
-	background-color: #28587a;
+	background-color: var(--cor-hover);
 }
-/*build*/
 
 #build {
 	margin: 0;
@@ -628,16 +649,14 @@ select {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: #174278;
+	background-color: var(--cor-secundaria);
 }
 
-/* O caderno (caixa azul claro com pautas) */
-
 .caderno-build {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	width: 1000px;
 	height: 550px;
-	border: 3px solid #000;
+	border: 3px solid var(--preto);
 	border-radius: 10px;
 	padding: 20px;
 	position: relative;
@@ -645,29 +664,25 @@ select {
 	flex-wrap: wrap;
 }
 
-
-
-/* Cabeçalho como um informe (parecendo uma etiqueta ou banner colado no caderno) */
 #Titu-build{
 	width: 940px;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	text-align: center;
 	padding: 20px;
 	border-radius: 50px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	font-weight: bold;
 	font-size: 24px;
 	z-index: 2;
 	align-content: center;
 }
 
-/* Caixa das informações com fitas (Simulando fita colada para inputs) */
 .box-build {
 	width: 45%;
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	border-radius: 10px;
 	padding: 10px;
-	border: 2px solid #000;
+	border: 2px solid var(--preto);
 	margin: 10px;
 	z-index: 2;
 	display: flex;
@@ -676,7 +691,6 @@ select {
 	align-content: center;
 	justify-content: flex-end;
 }
-
 
 #label-build {
 	font-weight: bold;
@@ -687,9 +701,9 @@ select {
 #opcao{
 	width: 100%;
 	padding: 5px;
-	border: 1px solid #000;
+	border: 1px solid var(--preto);
 	border-radius: 5px;
-	background-color: #FFF;
+	background-color: var(--branco);
 }
 
 .button-box-build{
@@ -701,21 +715,21 @@ select {
 
 .code {
 	background-color: #021627;
-	color: white;
-	border: 1px solid #000;
+	color: var(--branco);
+	border: 1px solid var(--preto);
 	padding: 8px;
 	border-radius: 5px;
 	cursor: pointer;
 	width: 45%;
 	align-content: center;
-	
 	display: flex;
 	height: 30px;
 }
+
 .button-build {
 	background-color: #0a5da7;
-	color: white;
-	border: 1px solid #000;
+	color: var(--branco);
+	border: 1px solid var(--preto);
 	padding: 6px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -732,25 +746,22 @@ select {
 	background-color: #2C4A66;
 }
 
-/* Drop-down (parece uma fita colada com a seta ao lado) */
 .span-required{
 	display: none;
 	font-size: 14px;
 	margin: 3px 0 0 1px;
-	color: RED
+	color: #ff0000;
 }
-/*alternativas*/
 
 .container-alternativas {
 	padding: 20px;
-	background-color: #012c41;
+	background-color: var(--cor-borda);
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	
 }
 
 .form-container-alternativas {
-	background-color: #cfe4ff;
+	background-color: var(--cor-princial);
 	border-radius: 10px;
 	padding: 20px;
 	width: 1000px;
@@ -759,17 +770,8 @@ select {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
 }
 
-h1 {
-	text-align: center;
-	background-color: #cfe4ff;
-	border-radius: 10px;
-	border: 2px solid #174278;
-}
-
-/* Layout do formulário */
 .form-alternativas{
 	display: flex;
 	flex-direction: column;
@@ -790,6 +792,7 @@ h1 {
 	align-items: center;
 	height: 150px;
 }
+
 .form-right-alternativas {
 	width: 45%;
 	height: 150px;
@@ -798,29 +801,25 @@ h1 {
 	align-items: center;
 }
 
-
 .input-login {
 	width: 70%;
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #E3F1FC;
+	border: 1px solid var(--preto);
+	background-color: var(--background-input);
 }
 
-/* Estilo do botão */
 #button-alternativas {
 	display: flex;
 	width: 500px;
 	padding: 10px;
 	background-color: #1D4F82;
-	color: white;
+	color: var(--branco);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 100px;
 }
-
-
 
 #button-alternativas:hover {
 	background-color: #163C64;

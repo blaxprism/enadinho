@@ -29,7 +29,7 @@ function validarEmail(campo) {
 
 function erroEmail(){
 	let index = document.getElementById('email')
-	if (ValidarEmail(index)) {
+	if (validarEmail(index)) {
 		let email = document.getElementById('email')
 		let confirmaEmail = document.getElementById('confirmar-email')
 		document.getElementById('span-email').innerText = ""
@@ -61,7 +61,7 @@ function erroEmail(){
 function erroComparaEmail(){
 	let email = document.getElementById('email')
 	let confirmaEmail = document.getElementById('confirmar-email')
-	if (ValidarEmail(confirmaEmail)){
+	if (validarEmail(confirmaEmail)){
 		document.getElementById('confirmar-email').style.border = ''
 		document.getElementById('span-compara-email').innerText = ""
 		document.getElementById('span-compara-email').style.display = "none"
@@ -81,10 +81,30 @@ function erroComparaEmail(){
 			document.getElementById('span-compara-email').style.display = "block"
 		}
 	}else{
-		document.getElementById('confirmar-email').style.border = '1px solid red'
+		document.getElementById('dataNascimento').style.border = '1px solid red'
 		document.getElementById('span-compara-email').innerText = "O email deve ser válido"
 		document.getElementById('span-compara-email').style.display = "block"
 	}
+}
+
+function validarDataNasc(campo) {
+    const minDate = new Date("1950-01-01");
+    const maxDate = new Date("2008-12-31");
+    const selectedDate = new Date(campo.value);
+    const spanValidacao = document.getElementById('span-validacao-data');
+
+    spanValidacao.style.display = "none";
+    spanValidacao.innerText = "";
+
+    if (selectedDate < minDate) {
+        campo.value = "1950-01-01";
+        spanValidacao.innerText = "A data não pode ser anterior a 1950.";
+        spanValidacao.style.display = "block";
+    } else if (selectedDate > maxDate) {
+        campo.value = "2008-12-31";
+        spanValidacao.innerText = "A data não pode ser posterior a 2008.";
+        spanValidacao.style.display = "block";
+    }
 }
 
 //senha
@@ -152,5 +172,14 @@ function erroComparaSenha(){
 }
 
 module.exports = {
-	validarNome
+	validarNome,
+	validarEmail,
+	validarSenha,
+	validarDataNasc,
+	erroNome,
+	erroEmail,
+	erroSenha,
+	erroComparaEmail,
+	erroComparaSenha
 }
+

@@ -136,3 +136,14 @@ main().catch(err => {
 	knex.destroy() // Garante que a conexão seja fechada mesmo em caso de erro
 })
 */
+
+module.exports = {
+	cadastrarAluno,
+	cadastrarCoordenador,
+	cadastrarCurso,
+	cadastrarDisciplina,
+	cadastrarEnunciado,
+	cadastrarFeedback,
+	cadastrarProfessor,
+	cadastrarQuestao
+}

@@ -109,3 +109,17 @@ async function atualizarFeedback(id, texto, id_questao, id_professor) {
 		console.log("Conexão fechada. Programa encerrado.");
 	}
 })();
+
+
+
+module.exports = {
+	atualizarAluno,
+	atualizarBanco,
+	atualizarCoordenador,
+	atualizarCurso,
+	atualizarDisciplina,
+	atualizarEnunciado,
+	atualizarFeedback,
+	atualizarProfessor,
+	atualizarQuestao
+}
