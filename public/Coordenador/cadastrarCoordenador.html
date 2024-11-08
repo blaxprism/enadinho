@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../Css/style.css">
+	<title>Cadastrar Coordenador</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="form-container-cadastro">
+			<h1>Cadastrar Coordenador</h1>
+			<!--não pode ser um oninput, porque senão vamos ter um monte de cadastros invalidos-->
+			<form action="indexCoordenador.html">
+				<div class="form-group-cadastro">
+
+					<div class="form-left-cadastro">
+						<label for="nome">Nome:</label>
+						<input type="text" id="nome" name="nome" class="input-cadastro required" oninput="erroNome()" required>
+						<span class="span-required" id="span-nome"></span>
+
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" class="input-cadastro required" oninput="erroEmail()" required>
+						<span class="span-required" id="span-email"></span>
+
+						<label for="confirmar-email">Confirmar email:</label>
+						<input type="email" id="confirmar-email" name="confirmar-email" class="input-cadastro required" oninput="erroComparaEmail()" required>
+						<span class="span-required" id="span-compara-email"></span>
+
+						<div class="checkbox-container-cadastro">
+							<input type="checkbox" id="termos" name="termos" required>
+							<label for="termos">Termos de uso e privacidade</label>
+							<a href="#"><small>Clique aqui para ver nossos termos de uso</small></a>
+							<br>
+							
+						</div>
+					</div>
+
+					<div class="form-right-cadastro">
+						<!--criar campo data de nascimento-->
+						<label for="dataNascimento">Data de Nascimento:</label>
+						<input type="date" id="dataNascimento" name="dataNascimento" class="input-cadastro required" required max="2008-12-31" min="1950-01-01" onblur="validarDataNasc(this)">
+						<span id="span-validacao-data" style="display: none; color: red; font-size: 12px;"></span>
+
+						<label for="senha">Senha:</label>
+						<input type="password" id="senha" name="senha" class="input-cadastro required" oninput="erroSenha()" required>
+						<span class="span-required" id="span-senha"></span>
+
+						<label for="confirmar-senha">Confirmar senha:</label>
+						<input type="password" id="confirmar-senha" name="confirmar-senha" class="input-cadastro required" oninput="erroComparaSenha()" required>
+						<span class="span-required" id="span-compara-senha"></span>
+						<button id="button-cadastro" onclick="validarTudo()">Cadastrar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="../Js/validar.js"></script>
+	<script src="../Js/chamadasValidacao.js"></script>
+</body>
+</html>
